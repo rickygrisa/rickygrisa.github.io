@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rickygrisa.github.io/sitemap.xml
+Sitemap: https://therandomwalk.cafe/sitemap.xml
