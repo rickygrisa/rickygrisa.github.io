@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rickygrisa.github.io/sitemap.xml
