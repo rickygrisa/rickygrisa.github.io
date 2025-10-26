@@ -8,7 +8,7 @@
   <meta name="description" content="The Random Walk Café — a minimal index of PDF letters and notes. A blog by Riccardo Grisanti.">
   <meta name="robots" content="index, follow">
 
-  <!-- IMPORTANT: forza tutti i link relativi a partire dalla root del sito -->
+  <!-- Fa funzionare i link relativi ovunque (anche /therandomwalk.cafe/) -->
   <base href="https://rickygrisa.github.io/">
 
   <link rel="canonical" href="https://rickygrisa.github.io/">
@@ -20,11 +20,9 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Blog di Riccardo Grisanti — The Random Walk Café">
   <meta name="twitter:description" content="Minimal index of PDF letters & notes by Riccardo Grisanti.">
-
-  <!-- Latin Modern Typewriter (mono LaTeX) -->
+  <!-- Latin Modern Mono (LaTeX-style) -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://fontlibrary.org//face/latin-modern-mono">
-
   <style>
     /* Deliberately minimal, 90s-style */
     body { font-family: 'Latin Modern Mono','Latin Modern Sans','Latin Modern Roman', monospace; margin: 24px; background: #ffffff; color: #000; }
@@ -38,7 +36,6 @@
     .foot { text-align: center; font-size: 0.95em; margin-top: 24px; }
     a { color: #0000cc; }
   </style>
-
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -46,12 +43,7 @@
     "name":"The Random Walk Café",
     "alternateName":["Blog di Riccardo Grisanti","Riccardo Grisanti Blog","The Random Walk Cafe"],
     "url":"https://rickygrisa.github.io/",
-    "publisher":{
-      "@type":"Person",
-      "name":"Riccardo Grisanti",
-      "email":"riccardo.grisanti@axionbank.ch",
-      "sameAs":["https://www.linkedin.com/in/riccardo-grisanti-51587a293/?profileId=ACoAAEckTWEBHS8VFI2vkrtJBe-f1Q3QsEYjBZg"]
-    },
+    "publisher":{"@type":"Person","name":"Riccardo Grisanti"},
     "inLanguage":"en"
   }
   </script>
@@ -68,20 +60,20 @@
   </div>
   <div class="note muted" style="text-align:center"><em>Blog di Riccardo Grisanti — The Random Walk Café</em></div>
   <hr>
-
-  <p class="note muted" style="text-align:center">
-    These notes are published in the hope that they may help readers better understand the beautiful world of financial science.
-  </p>
+  <p class="note muted" style="text-align:center">These notes are published in the hope that they may help readers better understand the beautiful world of financial science.</p>
   <hr>
 
   <!-- === HOW TO UPDATE ===
-    Con <base href="https://rickygrisa.github.io/"> puoi usare link RELATIVI (es. "file.pdf") da qualunque percorso.
+    Se tieni i PDF nella ROOT del repo (come adesso), usa href="nomefile.pdf".
+    Con il <base> qui sopra i link funzionano anche se questa pagina è servita da /therandomwalk.cafe/.
   -->
 
   <h2>2025</h2>
   <ul>
     <li>2025-10-25 — <a href="logarithms-scale.pdf">Logarithmic scale in charts (PDF)</a></li>
   </ul>
+
+  <!-- Aggiungi qui altre annate quando carichi nuovi PDF -->
 
   <hr>
   <div class="foot">
@@ -91,8 +83,8 @@
 
 </div>
 
+<!-- aggiorna automaticamente la data in formato YYYY-MM-DD -->
 <script>
-  // aggiorna automaticamente la data "Last updated" in formato YYYY-MM-DD
   (function(){
     var el = document.getElementById('last-updated');
     if (!el) return;
@@ -105,5 +97,3 @@
 </script>
 </body>
 </html>
-
-
