@@ -7,32 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Random Walk Café — a minimal index of PDF letters and notes. A blog by Riccardo Grisanti.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://rickygrisa.github.io/">
+
+  <!-- Canonical/OG puntano al sito di progetto -->
+  <link rel="canonical" href="https://rickygrisa.github.io/therandomwalk.cafe/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Blog di Riccardo Grisanti — The Random Walk Café">
   <meta property="og:description" content="The Random Walk Café — il blog di Riccardo Grisanti. PDF letters & notes on finance.">
-  <meta property="og:url" content="https://rickygrisa.github.io/">
+  <meta property="og:url" content="https://rickygrisa.github.io/therandomwalk.cafe/">
   <meta property="og:site_name" content="The Random Walk Café">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Blog di Riccardo Grisanti — The Random Walk Café">
   <meta name="twitter:description" content="Minimal index of PDF letters & notes by Riccardo Grisanti.">
 
-  <!-- Latin Modern Typewriter (stile LaTeX) -->
+  <!-- Latin Modern Typewriter (LaTeX) -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://fontlibrary.org//face/latin-modern-mono">
 
   <style>
-    /* Minimalissimo, stile anni '90 */
-    body { font-family: 'Latin Modern Mono','Latin Modern Sans','Latin Modern Roman', monospace; margin: 24px; background: #fff; color: #000; }
-    h1, h2 { text-align: center; margin: 0.5em 0; font-weight: 700; }
-    hr { border: 0; border-top: 1px solid #000; margin: 16px 0; }
-    .wrap { max-width: 820px; margin: 0 auto; }
-    ul { margin: 0.5em 0 1.5em 1.2em; }
-    li { margin: 0.3em 0; }
-    .note { font-size: 0.95em; }
-    .muted { color: #333; }
-    .foot { text-align: center; font-size: 0.95em; margin-top: 24px; }
-    a { color: #0000cc; }
+    /* Rudimentale, 90s */
+    body { font-family: 'Latin Modern Mono','Latin Modern Sans','Latin Modern Roman', monospace; margin: 24px; background:#fff; color:#000; }
+    h1, h2 { text-align:center; margin: .5em 0; font-weight: 700; }
+    hr { border:0; border-top:1px solid #000; margin:16px 0; }
+    .wrap { max-width:820px; margin:0 auto; }
+    ul { margin:.5em 0 1.5em 1.2em; }
+    li { margin:.3em 0; }
+    .note { font-size:.95em; }
+    .muted { color:#333; }
+    .foot { text-align:center; font-size:.95em; margin-top:24px; }
+    a { color:#00f; }
   </style>
 
   <script type="application/ld+json">
@@ -41,7 +43,7 @@
     "@type":"WebSite",
     "name":"The Random Walk Café",
     "alternateName":["Blog di Riccardo Grisanti","Riccardo Grisanti Blog","The Random Walk Cafe"],
-    "url":"https://rickygrisa.github.io/",
+    "url":"https://rickygrisa.github.io/therandomwalk.cafe/",
     "publisher":{"@type":"Person","name":"Riccardo Grisanti"},
     "inLanguage":"en"
   }
@@ -53,10 +55,9 @@
   <h1>The Random Walk Café</h1>
   <div class="note" style="text-align:center">un blog di Riccardo Grisanti</div>
   <div class="note" style="text-align:center">
-    <a href="/">Home</a> ·
+    <a href="./">Home</a> ·
     <a href="https://www.linkedin.com/in/riccardo-grisanti-51587a293/?profileId=ACoAAEckTWEBHS8VFI2vkrtJBe-f1Q3QsEYjBZg" target="_blank" rel="noopener">LinkedIn</a>
   </div>
-  <div class="note muted" style="text-align:center"><em>Blog di Riccardo Grisanti — The Random Walk Café</em></div>
 
   <hr>
   <p class="note muted" style="text-align:center">
@@ -66,8 +67,8 @@
 
   <h2>2025</h2>
   <ul>
-    <!-- Link assoluto: funziona ovunque -->
-    <li>2025-10-25 — <a href="https://therandomwalk.cafe/logarithms-scale.pdf">Logarithmic scale in charts (PDF)</a></li>
+    <!-- Link assoluto al path del progetto: funziona sempre -->
+    <li>2025-10-25 — <a href="/therandomwalk.cafe/logarithms-scale.pdf">Logarithmic scale in charts (PDF)</a></li>
   </ul>
 
   <hr>
@@ -78,17 +79,16 @@
 
 </div>
 
-<!-- Aggiorna automaticamente la data (YYYY-MM-DD) -->
+<!-- Last updated auto (YYYY-MM-DD) -->
 <script>
-  (function(){
-    var el = document.getElementById('last-updated');
-    if (!el) return;
-    var d = new Date(document.lastModified);
-    var y = d.getFullYear();
-    var m = ('0' + (d.getMonth()+1)).slice(-2);
-    var day = ('0' + d.getDate()).slice(-2);
-    el.textContent = y + '-' + m + '-' + day;
-  })();
+(function(){
+  var el = document.getElementById('last-updated');
+  if (!el) return;
+  var d = new Date(document.lastModified);
+  var y=d.getFullYear(), m=('0'+(d.getMonth()+1)).slice(-2), day=('0'+d.getDate()).slice(-2);
+  el.textContent = y + '-' + m + '-' + day;
+})();
 </script>
 </body>
 </html>
+
