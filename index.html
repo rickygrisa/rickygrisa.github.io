@@ -8,7 +8,7 @@
   <meta name="description" content="The Random Walk Café — a minimal index of PDF letters and notes. A blog by Riccardo Grisanti.">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical/OG puntano al sito di progetto -->
+  <!-- Canonical/OG: puntano alla pagina di progetto -->
   <link rel="canonical" href="https://rickygrisa.github.io/therandomwalk.cafe/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Blog di Riccardo Grisanti — The Random Walk Café">
@@ -19,22 +19,22 @@
   <meta name="twitter:title" content="Blog di Riccardo Grisanti — The Random Walk Café">
   <meta name="twitter:description" content="Minimal index of PDF letters & notes by Riccardo Grisanti.">
 
-  <!-- Latin Modern Typewriter (LaTeX) -->
+  <!-- Latin Modern Typewriter (stile LaTeX) -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://fontlibrary.org//face/latin-modern-mono">
 
   <style>
-    /* Rudimentale, 90s */
-    body { font-family: 'Latin Modern Mono','Latin Modern Sans','Latin Modern Roman', monospace; margin: 24px; background:#fff; color:#000; }
-    h1, h2 { text-align:center; margin: .5em 0; font-weight: 700; }
-    hr { border:0; border-top:1px solid #000; margin:16px 0; }
-    .wrap { max-width:820px; margin:0 auto; }
-    ul { margin:.5em 0 1.5em 1.2em; }
-    li { margin:.3em 0; }
-    .note { font-size:.95em; }
-    .muted { color:#333; }
-    .foot { text-align:center; font-size:.95em; margin-top:24px; }
-    a { color:#00f; }
+    /* Minimalissimo, stile anni '90 */
+    body { font-family: 'Latin Modern Mono','Latin Modern Sans','Latin Modern Roman', monospace; margin: 24px; background: #fff; color: #000; }
+    h1, h2 { text-align: center; margin: 0.5em 0; font-weight: 700; }
+    hr { border: 0; border-top: 1px solid #000; margin: 16px 0; }
+    .wrap { max-width: 820px; margin: 0 auto; }
+    ul { margin: 0.5em 0 1.5em 1.2em; }
+    li { margin: 0.3em 0; }
+    .note { font-size: 0.95em; }
+    .muted { color: #333; }
+    .foot { text-align: center; font-size: 0.95em; margin-top: 24px; }
+    a { color: #0000cc; }
   </style>
 
   <script type="application/ld+json">
@@ -67,8 +67,8 @@
 
   <h2>2025</h2>
   <ul>
-    <!-- Link assoluto al path del progetto: funziona sempre -->
-    <li>2025-10-25 — <a href="/therandomwalk.cafe/logarithms-scale.pdf">Logarithmic scale in charts (PDF)</a></li>
+    <!-- Link RELATIVO: funziona da /therandomwalk.cafe/ -->
+    <li>2025-10-25 — <a href="logarithms-scale.pdf">Logarithmic scale in charts (PDF)</a></li>
   </ul>
 
   <hr>
@@ -79,16 +79,17 @@
 
 </div>
 
-<!-- Last updated auto (YYYY-MM-DD) -->
+<!-- Aggiorna automaticamente la data (YYYY-MM-DD) -->
 <script>
-(function(){
-  var el = document.getElementById('last-updated');
-  if (!el) return;
-  var d = new Date(document.lastModified);
-  var y=d.getFullYear(), m=('0'+(d.getMonth()+1)).slice(-2), day=('0'+d.getDate()).slice(-2);
-  el.textContent = y + '-' + m + '-' + day;
-})();
+  (function(){
+    var el = document.getElementById('last-updated');
+    if (!el) return;
+    var d = new Date(document.lastModified);
+    var y = d.getFullYear();
+    var m = ('0' + (d.getMonth()+1)).slice(-2);
+    var day = ('0' + d.getDate()).slice(-2);
+    el.textContent = y + '-' + m + '-' + day;
+  })();
 </script>
 </body>
 </html>
-
